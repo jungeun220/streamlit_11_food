@@ -59,7 +59,8 @@ def main() :
         print("Confidence Score:", confidence_score)
 
         # 유저한테 보여주도록 한다.
-        st.info('이 음식은 ' + class_name[2:], + '입니다. 정확도는 ' + str(round(confidence_score * 100)) + '% 입니다. ')
+        st.info('이 음식은 ' + class_name[2:] + '입니다.')
+        st.info('정확도는 '  + str(round(confidence_score * 100)) + '% 입니다. ')
 
 if __name__ == '__main__' :
     main()
